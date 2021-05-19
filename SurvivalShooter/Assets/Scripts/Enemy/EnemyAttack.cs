@@ -9,7 +9,7 @@ public class EnemyAttack : MonoBehaviour
     Animator anim;
     GameObject player;
     PlayerHealth playerHealth;
-    //EnemyHealth enemyHealth;
+    EnemyHealth enemyHealth;
     bool playerInRange;
     float timer;
 
@@ -24,14 +24,16 @@ public class EnemyAttack : MonoBehaviour
 
         //mendapatkan komponen Animator
         anim = GetComponent<Animator>();
-        //enemyHealth = GetComponent<EnemyHealth>();      
+
+        //Mendapatkan Enemy health
+        enemyHealth = GetComponent<EnemyHealth>();
     }
 
 
     //Callback jika ada suatu object masuk kedalam trigger
     void OnTriggerEnter(Collider other)
     {
-        //Set player in range
+        //Set player dalam range
         if (other.gameObject == player)
         {
             playerInRange = true;
@@ -41,7 +43,7 @@ public class EnemyAttack : MonoBehaviour
     //Callback jika ada object yang keluar dari trigger
     void OnTriggerExit(Collider other)
     {
-        //Set player not in range
+        //Set player jika tidak dalam range
         if (other.gameObject == player)
         {
             playerInRange = false;
@@ -53,7 +55,7 @@ public class EnemyAttack : MonoBehaviour
     {
         timer += Time.deltaTime;
 
-        if (timer >= timeBetweenAttacks && playerInRange/* && enemyHealth.currentHealth > 0*/)
+        if (timer >= timeBetweenAttacks && playerInRange && enemyHealth.currentHealth > 0)
         {
             Attack();
         }

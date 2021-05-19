@@ -9913,7 +9913,7 @@ GameObject:
   - component: {fileID: 1265558846365134548}
   - component: {fileID: 7690836539305796236}
   - component: {fileID: 4517907479478311206}
-  m_Layer: 9
+  m_Layer: 6
   m_Name: Hellephant
   m_TagString: Enemy
   m_Icon: {fileID: 0}
