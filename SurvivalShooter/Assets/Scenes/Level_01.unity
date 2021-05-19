@@ -6931,7 +6931,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa51b2b24acc35b46a3630f2ed6b7dbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthIncrease: 10
+  healthIncrease: 50
 --- !u!135 &1444066776
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -7572,7 +7572,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa51b2b24acc35b46a3630f2ed6b7dbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthIncrease: 10
+  healthIncrease: 50
 --- !u!135 &2046029546
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -7681,7 +7681,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa51b2b24acc35b46a3630f2ed6b7dbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthIncrease: 10
+  healthIncrease: 50
 --- !u!135 &2080952842
 SphereCollider:
   m_ObjectHideFlags: 0
